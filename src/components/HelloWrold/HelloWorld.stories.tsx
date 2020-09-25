@@ -1,15 +1,15 @@
 import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 
-import { TextComponent } from "./TextComponent";
+import { HelloWorld } from "./HelloWorld";
 
 export default {
-  title: "TextComponent",
+  title: "HelloWorld",
   decorators: [withKnobs],
 };
 
-export const TextComponentStory: React.FC<{}> = () => {
+export const HelloWorldStory: React.FC<{}> = () => {
   const param = text("Text", "world");
 
-  return <TextComponent text={param} />;
+  return <HelloWorld text={param} />;
 };

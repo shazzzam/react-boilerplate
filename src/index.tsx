@@ -1,11 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
 
-import { TextComponent } from "./TextComponent";
+import { HelloWorld } from "./components";
 
-render(
-  <div>
-    <TextComponent text="world" />
-  </div>,
-  document.getElementById("root")
-);
+render(<HelloWorld text="world" />, document.getElementById("root"));
